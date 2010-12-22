@@ -63,7 +63,7 @@ Von 15 Lösungen erfüllen nun 9 die Anforderungen vollständig. Die »errors« 
 
 Hervorzuheben sind die Lösungen von Martin und Benjamin. Martin liefert das Zahlenwunder gleich für mehrere Sprachen, Benjamin verkünstelt sich im Minimalismus.
 
-Die "besonders schnellen" Lösungen <code>globe</code>, <code>eric2</code>, <code>eric</code>, <code>blubber</code> wurden für einen einzigen Durchlauf geschrieben. Sie erlauben deshalb nur die Ausgabe der kompletten Liste, statt auch einzelner spezifischer Zahlen.
+Die "besonders schnellen" Lösungen <code>benjamin3</code>, <code>globe</code>, <code>eric2</code>, <code>eric</code>, <code>blubber</code> wurden für einen einzigen Durchlauf geschrieben. Sie erlauben deshalb nur die Ausgabe der kompletten Liste, statt auch einzelner spezifischer Zahlen.
 
 Auf die einzelnen Implementierungen will ich an dieser Stelle nicht weiter eingehen, dafür fehlt mir die Zeit…
 
