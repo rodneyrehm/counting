@@ -19,43 +19,41 @@ Mir persönlich sind 100 Zeilen Code deutlich lieber, wenn der Code lesbarer, ve
 
 In den Kommentaren des [Artikels](http://www.phpgangsta.de/wettbewerb-10-000-zahlen-ausschreiben) kann man sich die bisher "eingesandten" Lösungen herausfischen. Auf die einzelnen Implementierungen will ich an dieser Stelle nicht eingehen, das darf gerne der Autor der Geschichte machen.
 
-Ranking nach Ausführungszeig:
+Ranking nach Ausführungszeit:
 
 approach | time | memory | peak | characters | errors 
 ---------|------|--------|------|------------|--------
-globe | 0.0546 | 2298.65 | 3297.36 | 881 | -
-eric | 0.102 | 333.35 | 1333.54 | 726 | 60, 61, 66, 764, 1016, 2067
-philip | 0.1586 | 333.88 | 1334.29 | 805 | 60, 61, 66, 764, 1000, 1001, 1016, 2067
-globe2 | 0.1773 | 2318.26 | 3315.82 | 1244 | 1
-edo | 0.1904 | 356.83 | 2491.79 | 889 | 1, 33, 60, 61, 66, 70, 71, 77, 101, 174, 764, 1001, 1016, 2067
-chrisb | 0.2197 | 351.85 | 1349.91 | 1114 | -
-dominik | 0.3562 | 363.24 | 1363.25 | 2101 | 21, 33, 61, 71
-be | 0.5051 | 366.8 | 1365.69 | 1591 | 26, 27, 66, 77, 100, 101, 174, 2067
-benjamin2 | 0.6121 | 365.08 | 1365.08 | 1642 | -
-martin | 0.6158 | 2776.78 | 4636.64 | 3248 | 21, 61, 71
-benjamin | 0.6163 | 338.82 | 1353.46 | 449 | 33, 764
-andre | 0.9277 | 415.35 | 1417.78 | 3864 | -
-
+globe | 0.0545 | 2298.66 | 3301.63 | 881 | -
+eric2 | 0.0953 | 334.59 | 1338.95 | 650 | -
+eric | 0.1003 | 333.35 | 1337.66 | 726 | 60, 61, 66, 764, 1016, 2067
+philip | 0.1805 | 333.88 | 1338.47 | 805 | 60, 61, 66, 764, 1000, 1001, 1016, 2067
+edo | 0.1918 | 356.83 | 2495.98 | 889 | 1, 33, 60, 61, 66, 70, 71, 77, 101, 174, 764, 1001, 1016, 2067
+globe2 | 0.2062 | 2322.89 | 3324.65 | 1436 | -
+chrisb | 0.2181 | 351.86 | 1354.17 | 1114 | -
+dominik | 0.3579 | 363.21 | 1367.36 | 2101 | 21, 33, 61, 71
+be | 0.4988 | 366.8 | 1369.92 | 1591 | 26, 27, 66, 77, 100, 101, 174, 2067
+benjamin | 0.6017 | 338.82 | 1357.62 | 449 | 33, 764
+benjamin2 | 0.6193 | 365.09 | 1369.12 | 1642 | -
+martin | 0.6195 | 2776.84 | 4640.5 | 3248 | 21, 61, 71
+andre | 0.9184 | 415.37 | 1421.94 | 3864 | -
 
 Ranking nach LOC (Lines Of Code) (wobei hier eher »Anzahl Zeichen«):
 
 approach | time | memory | peak | characters | errors 
 ---------|------|--------|------|------------|--------
-benjamin | 0.6025 | 338.82 | 1353.46 | 449 | 33, 764
-eric | 0.0989 | 333.35 | 1333.54 | 726 | 60, 61, 66, 764, 1016, 2067
-philip | 0.1636 | 333.88 | 1334.29 | 805 | 60, 61, 66, 764, 1000, 1001, 1016, 2067
-globe | 0.0638 | 2298.65 | 3297.36 | 881 | -
-edo | 0.1861 | 356.83 | 2491.79 | 889 | 1, 33, 60, 61, 66, 70, 71, 77, 101, 174, 764, 1001, 1016, 2067
-chrisb | 0.2187 | 351.85 | 1349.91 | 1114 | -
-globe2 | 0.2207 | 2318.26 | 3315.82 | 1244 | 1
-be | 0.5023 | 366.8 | 1365.69 | 1591 | 26, 27, 66, 77, 100, 101, 174, 2067
-benjamin2 | 0.6091 | 365.08 | 1365.08 | 1642 | -
-dominik | 0.3574 | 363.24 | 1363.25 | 2101 | 21, 33, 61, 71
-martin | 0.6187 | 2776.78 | 4636.64 | 3248 | 21, 61, 71
-andre | 0.9211 | 415.35 | 1417.78 | 3864 | -
-
-
-
+benjamin | 0.6017 | 338.82 | 1357.62 | 449 | 33, 764
+eric2 | 0.0953 | 334.59 | 1338.95 | 650 | -
+eric | 0.1003 | 333.35 | 1337.66 | 726 | 60, 61, 66, 764, 1016, 2067
+philip | 0.1805 | 333.88 | 1338.47 | 805 | 60, 61, 66, 764, 1000, 1001, 1016, 2067
+globe | 0.0545 | 2298.66 | 3301.63 | 881 | -
+edo | 0.1918 | 356.83 | 2495.98 | 889 | 1, 33, 60, 61, 66, 70, 71, 77, 101, 174, 764, 1001, 1016, 2067
+chrisb | 0.2181 | 351.86 | 1354.17 | 1114 | -
+globe2 | 0.2062 | 2322.89 | 3324.65 | 1436 | -
+be | 0.4988 | 366.8 | 1369.92 | 1591 | 26, 27, 66, 77, 100, 101, 174, 2067
+benjamin2 | 0.6193 | 365.09 | 1369.12 | 1642 | -
+dominik | 0.3579 | 363.21 | 1367.36 | 2101 | 21, 33, 61, 71
+martin | 0.6195 | 2776.84 | 4640.5 | 3248 | 21, 61, 71
+andre | 0.9184 | 415.37 | 1421.94 | 3864 | -
 
 Von 11 Lösungen erfüllen nur 5 die Anforderungen vollständig.
 
@@ -112,12 +110,4 @@ Ersetzt man <code>split()</code> durch <code>explode()</code> reduziert sich die
 * <code>einsundzwanzig</code>
 
 Erlaubt mehrere Sprachen. Für Englisch und Deutsch. Frage mich ob das auch mit Französisch von Haus aus klappt.
-
-## Automated Testing
-
-Value Assertions können auf allen Scripts mit Ausnahme der folgenden durchgeführt werden
-
-* globe
-* eric
-* philip
 

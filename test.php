@@ -7,6 +7,7 @@ if( empty( $argv[1] ) )
 		'globe',
 		'globe2',
 		'eric',
+		'eric2',
 		'edo',
 		'chrisb',
 		'philip',
@@ -28,24 +29,29 @@ if( empty( $argv[1] ) )
 		//$results[ $test ]['iterations'] = explode( "\n", $res );
 	}
 	
-	usort( $results, function( $a, $b )
+	function output( $results, $sort=1 )
 	{
-		$an = $a[1];
-		$bn = $b[1];
-		if( $an == $bn )
-			return 0;
-			
-		return $an < $bn ? -1 : 1;
-	});
+		usort( $results, function( $a, $b ) use($sort)
+		{
+			$an = $a[ $sort ];
+			$bn = $b[ $sort ];
+			if( $an == $bn )
+				return 0;
 
-	echo "approach | time | memory | peak | characters | errors \n"
-		."---------|------|--------|------|------------|--------\n";
+			return $an < $bn ? -1 : 1;
+		});
 
-	foreach( $results as $res )
-	{
-		echo join( ' | ', $res ) . "\n";
+		echo "\napproach | time | memory | peak | characters | errors \n"
+			."---------|------|--------|------|------------|--------\n";
+
+		foreach( $results as $res )
+		{
+			echo join( ' | ', $res ) . "\n";
+		}
 	}
-
+	
+	output( $results, 1 );
+	output( $results, 4 );
 }
 else if( $argv[2] == 'run' )
 {
