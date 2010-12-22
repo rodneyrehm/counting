@@ -23,39 +23,41 @@ Ranking nach Ausführungszeit:
 
 approach | time | memory | peak | characters | errors 
 ---------|------|--------|------|------------|--------
-globe | 0.0549 | 2298.66 | 3301.63 | 881 | -
-eric | 0.0995 | 333.35 | 1337.66 | 726 | 60, 61, 66, 764, 1016, 2067
-eric2 | 0.1028 | 334.59 | 1338.95 | 650 | -
-philip | 0.1603 | 333.88 | 1338.47 | 805 | 60, 61, 66, 764, 1000, 1001, 1016, 2067
-edo | 0.1909 | 356.83 | 2495.98 | 889 | 1, 33, 60, 61, 66, 70, 71, 77, 101, 174, 764, 1001, 1016, 2067
-globe2 | 0.2283 | 2322.89 | 3324.65 | 1436 | -
-chrisb | 0.2533 | 351.86 | 1354.17 | 1114 | -
-dominik | 0.403 | 363.21 | 1367.36 | 2101 | 21, 33, 61, 71
-be | 0.5125 | 366.8 | 1369.92 | 1591 | 26, 27, 66, 77, 100, 101, 174, 2067
-benjamin2 | 0.6179 | 365.09 | 1369.12 | 1642 | -
-martin | 0.6322 | 2776.84 | 4640.5 | 3248 | 21, 61, 71
-benjamin | 0.926 | 344.72 | 1362.94 | 414 | -
-andre | 0.9312 | 415.37 | 1421.94 | 3864 | -
+globe | 0.0546 | 2298.69 | 3301.73 | 881 | -
+eric2 | 0.0952 | 334.59 | 1339.1 | 650 | -
+eric | 0.0986 | 333.35 | 1337.81 | 726 | 60, 61, 66, 764, 1016, 2067
+philip | 0.1587 | 333.88 | 1338.62 | 805 | 60, 61, 66, 764, 1000, 1001, 1016, 2067
+blubber | 0.1683 | 334.59 | 1337.99 | 1092 | -
+edo | 0.1896 | 356.83 | 2496.16 | 889 | 1, 33, 60, 61, 66, 70, 71, 77, 101, 174, 764, 1001, 1016, 2067
+globe2 | 0.206 | 2322.84 | 3324.74 | 1436 | -
+chrisb | 0.2229 | 351.86 | 1354.32 | 1114 | -
+dominik | 0.3638 | 363.21 | 1367.51 | 2101 | 21, 33, 61, 71
+be | 0.5247 | 366.8 | 1370.07 | 1591 | 26, 27, 66, 77, 100, 101, 174, 2067
+martin | 0.6292 | 2776.81 | 4640.64 | 3248 | 21, 61, 71
+benjamin2 | 0.6385 | 365.09 | 1369.27 | 1642 | -
+benjamin | 0.8995 | 344.72 | 1363.09 | 414 | -
+andre | 0.9394 | 415.37 | 1422.03 | 3864 | -
 
 Ranking nach LOC (Lines Of Code) (wobei hier eher »Anzahl Zeichen«):
 
 approach | time | memory | peak | characters | errors 
 ---------|------|--------|------|------------|--------
-benjamin | 0.926 | 344.72 | 1362.94 | 414 | -
-eric2 | 0.1028 | 334.59 | 1338.95 | 650 | -
-eric | 0.0995 | 333.35 | 1337.66 | 726 | 60, 61, 66, 764, 1016, 2067
-philip | 0.1603 | 333.88 | 1338.47 | 805 | 60, 61, 66, 764, 1000, 1001, 1016, 2067
-globe | 0.0549 | 2298.66 | 3301.63 | 881 | -
-edo | 0.1909 | 356.83 | 2495.98 | 889 | 1, 33, 60, 61, 66, 70, 71, 77, 101, 174, 764, 1001, 1016, 2067
-chrisb | 0.2533 | 351.86 | 1354.17 | 1114 | -
-globe2 | 0.2283 | 2322.89 | 3324.65 | 1436 | -
-be | 0.5125 | 366.8 | 1369.92 | 1591 | 26, 27, 66, 77, 100, 101, 174, 2067
-benjamin2 | 0.6179 | 365.09 | 1369.12 | 1642 | -
-dominik | 0.403 | 363.21 | 1367.36 | 2101 | 21, 33, 61, 71
-martin | 0.6322 | 2776.84 | 4640.5 | 3248 | 21, 61, 71
-andre | 0.9312 | 415.37 | 1421.94 | 3864 | -
+benjamin | 0.8995 | 344.72 | 1363.09 | 414 | -
+eric2 | 0.0952 | 334.59 | 1339.1 | 650 | -
+eric | 0.0986 | 333.35 | 1337.81 | 726 | 60, 61, 66, 764, 1016, 2067
+philip | 0.1587 | 333.88 | 1338.62 | 805 | 60, 61, 66, 764, 1000, 1001, 1016, 2067
+globe | 0.0546 | 2298.69 | 3301.73 | 881 | -
+edo | 0.1896 | 356.83 | 2496.16 | 889 | 1, 33, 60, 61, 66, 70, 71, 77, 101, 174, 764, 1001, 1016, 2067
+blubber | 0.1683 | 334.59 | 1337.99 | 1092 | -
+chrisb | 0.2229 | 351.86 | 1354.32 | 1114 | -
+globe2 | 0.206 | 2322.84 | 3324.74 | 1436 | -
+be | 0.5247 | 366.8 | 1370.07 | 1591 | 26, 27, 66, 77, 100, 101, 174, 2067
+benjamin2 | 0.6385 | 365.09 | 1369.27 | 1642 | -
+dominik | 0.3638 | 363.21 | 1367.51 | 2101 | 21, 33, 61, 71
+martin | 0.6292 | 2776.81 | 4640.64 | 3248 | 21, 61, 71
+andre | 0.9394 | 415.37 | 1422.03 | 3864 | -
 
-Von 13 Lösungen erfüllen nur 7 die Anforderungen vollständig.
+Von 14 Lösungen erfüllen nun 8 die Anforderungen vollständig. Die »errors« Spalte nennt falsch zusammengebaute Zahlen.
 
 ### Benedict (be.php)
 
@@ -96,10 +98,9 @@ Lassen wir <code>dreissig</code> mal <code>dreißig</code> sein und wir haben ei
 
 ### Benjamin (benjamin.php)
 
-* <code>dreiszigzig</code>
-* <code>vier</code>(zig!) , <code>einhundertvier</code>(zig!)
+zwischenzeitlich korrigiert. Results are sound.
 
-Ersetzt man <code>split()</code> durch <code>explode()</code> reduziert sich die Laufzeit von <code>0.9951</code> auf <code>0.6337</code> Sekunden. Der Benjamin möchte mal ein [Beispiel](https://gist.github.com/730197) anschauen und künftig auf Error Suppression verzichten… Vollkommen unnötiger Performancekiller.
+Benjamin hat wohl ordentlich Freude an [codegolf](http://codegolf.com). Seine Lösung verzichtet auf Lesbarkeit.
 
 ### Benjamin OOP (benjamin2.php)
 
