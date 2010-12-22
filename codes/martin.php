@@ -1,5 +1,9 @@
 <?php // https://github.com/MKuckert/wordednumbers/blob/master/wordednumbers.php
 
+$argv[1] = 1;
+$argv[2] = 10000;
+$argv[3] = 'de';
+
 class WordedNumbers {
 	
 	/**

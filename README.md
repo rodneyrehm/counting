@@ -21,35 +21,12 @@ In den Kommentaren des [Artikels](http://www.phpgangsta.de/wettbewerb-10-000-zah
 
 Ranking nach Ausführungszeig:
 
-rank | approach | time | memory | peak | characters | korrekt  
------|----------|------|--------|------|------------|---------
-1 | globe | 0.0552 | 2298.62 | 3287.59 | 881 | ja
-2 | eric | 0.098 | 333.33 | 1323.76 | 726 | nein
-3 | philip | 0.1584 | 333.86 | 1324.52 | 805 | nein
-4 | globe2 | 0.1762 | 2318.23 | 3306.13 | 1244 | ja
-5 | edo | 0.1873 | 356.8 | 2482.12 | 889 | nein
-6 | chrisb | 0.2273 | 351.84 | 1340.22 | 1114 | ja
-7 | dominik | 0.3569 | 363.22 | 1353.45 | 2101 | nein
-8 | be | 0.4995 | 366.77 | 1356.02 | 1591 | nein
-9 | benjamin | 0.6054 | 338.81 | 1343.42 | 449 | nein
-10 | benjamin2 | 0.6136 | 365.06 | 1354.59 | 1642 | ja
-11 | andre | 0.9275 | 415.34 | 1408.03 | 3864 | ja
 
 Ranking nach LOC (Lines Of Code) (wobei hier eher »Anzahl Zeichen«):
 
-rank | approach | time | memory | peak | characters | korrekt  
------|---------|------|--------|------|------------|---------
-1 | benjamin | 0.6021 | 338.81 | 1343.42 | 449 | nein
-2 | eric | 0.0967 | 333.33 | 1323.76 | 726 | nein
-3 | philip | 0.1574 | 333.86 | 1324.52 | 805 | nein
-4 | globe | 0.0547 | 2298.62 | 3287.59 | 881 | ja
-5 | edo | 0.1832 | 356.8 | 2482.12 | 889 | nein
-6 | chrisb | 0.2207 | 351.84 | 1340.22 | 1114 | ja
-7 | globe2 | 0.1765 | 2318.23 | 3306.13 | 1244 | ja
-8 | be | 0.4986 | 366.77 | 1356.02 | 1591 | nein
-9 | benjamin2 | 0.6416 | 365.06 | 1354.59 | 1642 | ja
-10 | dominik | 0.3519 | 363.22 | 1353.45 | 2101 | nein
-11 | andre | 0.924 | 415.34 | 1408.03 | 3864 | ja
+
+
+
 
 Von 11 Lösungen erfüllen nur 5 die Anforderungen vollständig.
 
@@ -100,4 +77,18 @@ Ersetzt man <code>split()</code> durch <code>explode()</code> reduziert sich die
 ### Benjamin OOP (benjamin2.php)
 
 *Exakt* das selbe Ergebnis wie globe.php und globe2.php. **yay!**
+
+### Martin (martin.php)
+
+* <code>einsundzwanzig</code>
+
+Erlaubt mehrere Sprachen. Für Englisch und Deutsch. Frage mich ob das auch mit Französisch von Haus aus klappt.
+
+## Automated Testing
+
+Value Assertions können auf allen Scripts mit Ausnahme der folgenden durchgeführt werden
+
+* globe
+* eric
+* philip
 
