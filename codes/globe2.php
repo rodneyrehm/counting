@@ -18,6 +18,7 @@ class GermanNumbers
 {
 	// base names
 	protected static $names = array(
+		0 => 'null',
 		1 => 'ein',
 		2 => 'zwei',
 		3 => 'drei', 
@@ -58,6 +59,17 @@ class GermanNumbers
 	
 	public static function convert( $i )
 	{
+		if( $i < 0 )
+			throw new Exception( $i .' is out of bounds for conversion' );
+
+		if( $i === 1 )
+			return 'eins';
+		
+		return self::_convert( $i );
+	}
+	
+	public static function _convert( $i )
+	{
 		if( isset( self::$names[ $i ] ) )
 			return self::$names[ $i ];
 			
@@ -73,8 +85,8 @@ class GermanNumbers
 			$b = $i % $base;
 		}
 		
-		$_a = self::convert( $a );
-		$_b = $b ? ( self::convert( $b ) . ( $b === 1 ? 's' : '' ) ) : '';
+		$_a = self::_convert( $a );
+		$_b = $b ? ( self::_convert( $b ) . ( $b === 1 ? 's' : '' ) ) : '';
 		
 		if( $i < 20 )
 			return self::$names[ $i ] = $_a . $_b;

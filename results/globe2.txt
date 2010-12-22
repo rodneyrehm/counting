@@ -1,4 +1,4 @@
-ein
+eins
 zwei
 drei
 vier

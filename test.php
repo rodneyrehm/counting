@@ -30,16 +30,16 @@ if( empty( $argv[1] ) )
 	
 	usort( $results, function( $a, $b )
 	{
-		$an = $a[1];
-		$bn = $b[1];
+		$an = $a[4];
+		$bn = $b[4];
 		if( $an == $bn )
 			return 0;
 			
 		return $an < $bn ? -1 : 1;
 	});
 
-	echo "approach | time | memory | peak | characters \n"
-		."---------|------|--------|------|------------\n";
+	echo "approach | time | memory | peak | characters | errors \n"
+		."---------|------|--------|------|------------|--------\n";
 
 	foreach( $results as $res )
 	{
@@ -76,8 +76,43 @@ else if( $argv[2] == 'run' )
 	
 	$length = mb_strlen( $code, 'UTF-8' );
 	
+	// test results
+	$values = array( 
+		1 => 'eins',
+		12 => 'zw(ö|oe)lf',
+		21 => 'einundzwanzig',
+		26 => 'sechsundzwanzig',
+		27 => 'siebenundzwanzig',
+		33 => 'dreiunddrei(ß|ss)ig',
+		60 => 'sechzig',
+		61 => 'einundsechzig',
+		66 => 'sechsundsechzig',
+		70 => 'siebzig',
+		71 => 'einundsiebzig',
+		77 => 'siebenundsiebzig',
+		100 => 'einhundert',
+		101 => 'einhunderteins',
+		174 => 'einhundertvierundsiebzig',
+		764 => 'siebenhundertvierundsechzig',
+		1000 => 'eintausend',
+		1001 => 'eintausendeins',
+		1016 => 'eintausendsechzehn',
+		2067 => 'zweitausendsiebenundsechzig',
+		10000 => 'zehntausend',
+	);
+	
+	$errors = array();
+	$_out = explode( "\n", $out );
+	foreach( $values as $key => $value )
+	{
+		if( empty( $_out[ $key -1 ] ) || !preg_match( '#^' . $value . '$#i', $_out[ $key -1 ] ) )
+			$errors[] = $key;
+	}
+	
+	$errors = $errors ? join( ', ', $errors ) : '-';
+	
 	file_put_contents( dirname( __FILE__ ) .'/results/'. $test .'.txt', $out );
-	echo "$test\n$duration\n$_memory\n$_memory_peak\n$length";
+	echo "$test\n$duration\n$_memory\n$_memory_peak\n$length\n$errors";
 }
 else if( $argv[2] == 'iterations' )
 {
