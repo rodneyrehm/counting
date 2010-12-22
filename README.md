@@ -23,46 +23,50 @@ Ranking nach Ausführungszeit:
 
 approach | time | memory | peak | characters | errors 
 ---------|------|--------|------|------------|--------
-globe | 0.0546 | 2298.69 | 3301.73 | 881 | -
-eric2 | 0.0952 | 334.59 | 1339.1 | 650 | -
-eric | 0.0986 | 333.35 | 1337.81 | 726 | 60, 61, 66, 764, 1016, 2067
-philip | 0.1587 | 333.88 | 1338.62 | 805 | 60, 61, 66, 764, 1000, 1001, 1016, 2067
-blubber | 0.1683 | 334.59 | 1337.99 | 1092 | -
-edo | 0.1896 | 356.83 | 2496.16 | 889 | 1, 33, 60, 61, 66, 70, 71, 77, 101, 174, 764, 1001, 1016, 2067
-globe2 | 0.206 | 2322.84 | 3324.74 | 1436 | -
-chrisb | 0.2229 | 351.86 | 1354.32 | 1114 | -
-dominik | 0.3638 | 363.21 | 1367.51 | 2101 | 21, 33, 61, 71
-be | 0.5247 | 366.8 | 1370.07 | 1591 | 26, 27, 66, 77, 100, 101, 174, 2067
-martin | 0.6292 | 2776.81 | 4640.64 | 3248 | 21, 61, 71
-benjamin2 | 0.6385 | 365.09 | 1369.27 | 1642 | -
-benjamin | 0.8995 | 344.72 | 1363.09 | 414 | -
-andre | 0.9394 | 415.37 | 1422.03 | 3864 | -
+benjamin3 | 0.0204 | 336.63 | 1340.07 | 536 | -
+globe | 0.0551 | 2298.67 | 3302.3 | 881 | -
+eric2 | 0.0939 | 334.61 | 1339.63 | 650 | -
+eric | 0.0974 | 333.38 | 1338.35 | 726 | 60, 61, 66, 764, 1016, 2067
+philip | 0.1576 | 333.89 | 1339.15 | 805 | 60, 61, 66, 764, 1000, 1001, 1016, 2067
+blubber | 0.1609 | 334.59 | 1338.5 | 1092 | -
+globe2 | 0.2062 | 2322.88 | 3325.37 | 1436 | -
+edo | 0.2093 | 356.83 | 2496.66 | 889 | 1, 33, 60, 61, 66, 70, 71, 77, 101, 174, 764, 1001, 1016, 2067
+chrisb | 0.2147 | 351.85 | 1354.83 | 1114 | -
+dominik | 0.3569 | 363.23 | 1368.12 | 2101 | 21, 33, 61, 71
+be | 0.5006 | 366.82 | 1370.56 | 1591 | 26, 27, 66, 77, 100, 101, 174, 2067
+benjamin2 | 0.6141 | 365.12 | 1369.81 | 1642 | -
+martin | 0.6268 | 2776.82 | 4641.15 | 3248 | 21, 61, 71
+benjamin | 0.8955 | 344.72 | 1363.67 | 414 | -
+andre | 0.9287 | 415.34 | 1422.69 | 3864 | -
 
 Ranking nach LOC (Lines Of Code) (wobei hier eher »Anzahl Zeichen«):
 
 approach | time | memory | peak | characters | errors 
 ---------|------|--------|------|------------|--------
-benjamin | 0.8995 | 344.72 | 1363.09 | 414 | -
-eric2 | 0.0952 | 334.59 | 1339.1 | 650 | -
-eric | 0.0986 | 333.35 | 1337.81 | 726 | 60, 61, 66, 764, 1016, 2067
-philip | 0.1587 | 333.88 | 1338.62 | 805 | 60, 61, 66, 764, 1000, 1001, 1016, 2067
-globe | 0.0546 | 2298.69 | 3301.73 | 881 | -
-edo | 0.1896 | 356.83 | 2496.16 | 889 | 1, 33, 60, 61, 66, 70, 71, 77, 101, 174, 764, 1001, 1016, 2067
-blubber | 0.1683 | 334.59 | 1337.99 | 1092 | -
-chrisb | 0.2229 | 351.86 | 1354.32 | 1114 | -
-globe2 | 0.206 | 2322.84 | 3324.74 | 1436 | -
-be | 0.5247 | 366.8 | 1370.07 | 1591 | 26, 27, 66, 77, 100, 101, 174, 2067
-benjamin2 | 0.6385 | 365.09 | 1369.27 | 1642 | -
-dominik | 0.3638 | 363.21 | 1367.51 | 2101 | 21, 33, 61, 71
-martin | 0.6292 | 2776.81 | 4640.64 | 3248 | 21, 61, 71
-andre | 0.9394 | 415.37 | 1422.03 | 3864 | -
+benjamin | 0.8955 | 344.72 | 1363.67 | 414 | -
+benjamin3 | 0.0204 | 336.63 | 1340.07 | 536 | -
+eric2 | 0.0939 | 334.61 | 1339.63 | 650 | -
+eric | 0.0974 | 333.38 | 1338.35 | 726 | 60, 61, 66, 764, 1016, 2067
+philip | 0.1576 | 333.89 | 1339.15 | 805 | 60, 61, 66, 764, 1000, 1001, 1016, 2067
+globe | 0.0551 | 2298.67 | 3302.3 | 881 | -
+edo | 0.2093 | 356.83 | 2496.66 | 889 | 1, 33, 60, 61, 66, 70, 71, 77, 101, 174, 764, 1001, 1016, 2067
+blubber | 0.1609 | 334.59 | 1338.5 | 1092 | -
+chrisb | 0.2147 | 351.85 | 1354.83 | 1114 | -
+globe2 | 0.2062 | 2322.88 | 3325.37 | 1436 | -
+be | 0.5006 | 366.82 | 1370.56 | 1591 | 26, 27, 66, 77, 100, 101, 174, 2067
+benjamin2 | 0.6141 | 365.12 | 1369.81 | 1642 | -
+dominik | 0.3569 | 363.23 | 1368.12 | 2101 | 21, 33, 61, 71
+martin | 0.6268 | 2776.82 | 4641.15 | 3248 | 21, 61, 71
+andre | 0.9287 | 415.34 | 1422.69 | 3864 | -
 
-Von 14 Lösungen erfüllen nun 8 die Anforderungen vollständig. Die »errors« Spalte nennt falsch zusammengebaute Zahlen.
+Von 15 Lösungen erfüllen nun 9 die Anforderungen vollständig. Die »errors« Spalte nennt falsch zusammengebaute Zahlen.
 
 Hervorzuheben sind die Lösungen von Martin und Benjamin. Martin liefert das Zahlenwunder gleich für mehrere Sprachen, Benjamin verkünstelt sich im Minimalismus.
 
 Die "besonders schnellen" Lösungen <code>globe</code>, <code>eric2</code>, <code>eric</code>, <code>blubber</code> wurden für einen einzigen Durchlauf geschrieben. Sie erlauben deshalb nur die Ausgabe der kompletten Liste, statt auch einzelner spezifischer Zahlen.
 
 Auf die einzelnen Implementierungen will ich an dieser Stelle nicht weiter eingehen, dafür fehlt mir die Zeit…
+
+Gewinner nach Punkten: <code>Benjamin 3</code>.
 
 [Und nun zurück zum Wettbewerb](http://www.phpgangsta.de/wettbewerb-10-000-zahlen-ausschreiben)
