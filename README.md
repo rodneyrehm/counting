@@ -55,7 +55,7 @@ dominik | 0.3579 | 363.21 | 1367.36 | 2101 | 21, 33, 61, 71
 martin | 0.6195 | 2776.84 | 4640.5 | 3248 | 21, 61, 71
 andre | 0.9184 | 415.37 | 1421.94 | 3864 | -
 
-Von 11 Lösungen erfüllen nur 5 die Anforderungen vollständig.
+Von 13 Lösungen erfüllen nur 6 die Anforderungen vollständig.
 
 ### Benedict (be.php)
 
