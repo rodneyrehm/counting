@@ -17,7 +17,7 @@ Mir persönlich sind 100 Zeilen Code deutlich lieber, wenn der Code lesbarer, ve
 
 ## Veröffentlichte Lösungen 
 
-In den Kommentaren des [Artikels](http://www.phpgangsta.de/wettbewerb-10-000-zahlen-ausschreiben) kann man sich die bisher "eingesandten" Lösungen herausfischen. Auf die einzelnen Implementierungen will ich an dieser Stelle nicht eingehen, das darf gerne der Autor der Geschichte machen.
+In den Kommentaren des [Artikels](http://www.phpgangsta.de/wettbewerb-10-000-zahlen-ausschreiben) kann man sich die bisher "eingesandten" Lösungen herausfischen.
 
 Ranking nach Ausführungszeit:
 
@@ -59,56 +59,10 @@ andre | 0.9394 | 415.37 | 1422.03 | 3864 | -
 
 Von 14 Lösungen erfüllen nun 8 die Anforderungen vollständig. Die »errors« Spalte nennt falsch zusammengebaute Zahlen.
 
-### Benedict (be.php)
+Hervorzuheben sind die Lösungen von Martin und Benjamin. Martin liefert das Zahlenwunder gleich für mehrere Sprachen, Benjamin verkünstelt sich im Minimalismus.
 
-* <code>sechundzwanzig</code>
-* <code>siebundvierzig</code>
-* <code>einshundert</code>
+Die "besonders schnellen" Lösungen <code>globe</code>, <code>eric2</code>, <code>eric</code>, <code>blubber</code> wurden für einen einzigen Durchlauf geschrieben. Sie erlauben deshalb nur die Ausgabe der kompletten Liste, statt auch einzelner spezifischer Zahlen.
 
-### Dominik (dominik.php)
+Auf die einzelnen Implementierungen will ich an dieser Stelle nicht weiter eingehen, dafür fehlt mir die Zeit…
 
-* <code>eindundzwanzig</code>
-* <code>dreisig</code>
-
-### Eric (eric.php)
-
-* <code>sechszehn</code>, <code>sechsig</code>
-* <code>achzig</code>
-
-### ChrisB (chrisb.php)
-
-Lassen wir <code>dreissig</code> mal <code>dreißig</code> sein und wir haben ein perfektes Ergebnis.. **yay!**
-
-### Edo (edo.php)
-
-* <code>ein</code>
-* <code>sechszehn</code>, <code>sechszig</code>
-* <code>siebenzehn</code>, <code>siebenzig</code>
-
-### Philip (philip.php)
-
-* <code>sechszehn</code>, <code>sechszig</code>
-* <code>einstausend</code>
-
-### André (andre.php)
-
-Lassen wir <code>dreissig</code> mal <code>dreißig</code> sein und wir haben ein perfektes Ergebnis.. **yay!**
-
-(Die Einzige Lösung mit großem Anfangsbuchstaben.)
-
-### Benjamin (benjamin.php)
-
-zwischenzeitlich korrigiert. Results are sound.
-
-Benjamin hat wohl ordentlich Freude an [codegolf](http://codegolf.com). Seine Lösung verzichtet auf Lesbarkeit.
-
-### Benjamin OOP (benjamin2.php)
-
-*Exakt* das selbe Ergebnis wie globe.php und globe2.php. **yay!**
-
-### Martin (martin.php)
-
-* <code>einsundzwanzig</code>
-
-Erlaubt mehrere Sprachen. Für Englisch und Deutsch. Frage mich ob das auch mit Französisch von Haus aus klappt.
-
+[Und nun zurück zum Wettbewerb](http://www.phpgangsta.de/wettbewerb-10-000-zahlen-ausschreiben)

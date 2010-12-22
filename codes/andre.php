@@ -1,4 +1,4 @@
-<?php
+<?php // http://pastebin.com/XyXJ8VK9
 
 class NumberToWord
 {
