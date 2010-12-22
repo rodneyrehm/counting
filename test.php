@@ -16,6 +16,7 @@ if( empty( $argv[1] ) )
 		'andre',
 		'benjamin',
 		'benjamin2',
+		'benjamin3',
 		'martin',
 		'blubber',
 	);
@@ -23,7 +24,7 @@ if( empty( $argv[1] ) )
 	foreach( $tests as $test )
 	{
 		// run test in its own process please
-		$res = `php test.php $test run`;
+		$res = `php -d short_open_tag=On test.php $test run`;
 		$results[ $test ] = explode( "\n", $res );
 
 		//$res = `php test.php $test iterations`;
@@ -56,8 +57,8 @@ if( empty( $argv[1] ) )
 }
 else if( $argv[2] == 'run' )
 {
-	// really? …
-	error_reporting( E_ALL & ~E_WARNING & ~E_NOTICE & ~E_DEPRECATED );
+	ini_set('display_errors', 0);
+	ini_set('log_errors', 0);
 	$test = $argv[1];
 	
 	$memory = memory_get_usage();
