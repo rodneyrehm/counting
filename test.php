@@ -30,8 +30,8 @@ if( empty( $argv[1] ) )
 	
 	usort( $results, function( $a, $b )
 	{
-		$an = $a[4];
-		$bn = $b[4];
+		$an = $a[1];
+		$bn = $b[1];
 		if( $an == $bn )
 			return 0;
 			
