@@ -15,6 +15,7 @@ if( empty( $argv[1] ) )
 		'andre',
 		'benjamin',
 		'benjamin2',
+		'martin',
 	);
 
 	foreach( $tests as $test )
@@ -50,13 +51,14 @@ else if( $argv[2] == 'run' )
 {
 	// really? …
 	error_reporting( E_ALL & ~E_WARNING & ~E_NOTICE & ~E_DEPRECATED );
-
+	$test = $argv[1];
+	
 	$memory = memory_get_usage();
 	$memory_peak = memory_get_peak_usage();
 	$start = microtime( true );
 	ob_start();
 
-	include dirname( __FILE__ ) .'/codes/'. $argv[1] .'.php';
+	include dirname( __FILE__ ) .'/codes/'. $test .'.php';
 
 	$out = ob_get_clean();
 	$duration = round( microtime( true ) - $start, 4 );
@@ -65,7 +67,7 @@ else if( $argv[2] == 'run' )
 	
 	// try to make code length comparable
 	// yes, this is a very rudimentary cleanup…
-	$code = file_get_contents( dirname( __FILE__ ) .'/codes/'. $argv[1] .'.php' );
+	$code = file_get_contents( dirname( __FILE__ ) .'/codes/'. $test .'.php' );
 	// strip comments
 	$code = preg_replace( '#/\*.*?\*/#ms', '', $code );
 	$code = preg_replace( '#//.*$#m', '', $code );
@@ -74,8 +76,8 @@ else if( $argv[2] == 'run' )
 	
 	$length = mb_strlen( $code, 'UTF-8' );
 	
-	file_put_contents( dirname( __FILE__ ) .'/results/'. $argv[1] .'.txt', $out );
-	echo "$argv[1]\n$duration\n$_memory\n$_memory_peak\n$length";
+	file_put_contents( dirname( __FILE__ ) .'/results/'. $test .'.txt', $out );
+	echo "$test\n$duration\n$_memory\n$_memory_peak\n$length";
 }
 else if( $argv[2] == 'iterations' )
 {
