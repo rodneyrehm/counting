@@ -19,6 +19,7 @@ if( empty( $argv[1] ) )
 		'benjamin3',
 		'martin',
 		'blubber',
+		'nick',
 	);
 
 	foreach( $tests as $test )
